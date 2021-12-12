@@ -42,13 +42,24 @@
       .content-block {
         padding-left: 2em;
         padding-right: 2em;
-        padding-bottom: 2em;
+        /* padding-bottom: 2em; */
+
+      }
+      .content-block1 {
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: justify;
+        text-align-last: justify;
+        text-justify: inter-ideograph;
       }
       .content-block2 {
         padding-left: 10em;
         padding-right: 10em;
         padding-bottom: 0.5em;
         padding-top: 0.5em;
+        text-align: justify;
+        text-align-last: justify;
+        text-justify: inter-ideograph;
       }
       .overview-video {
         background-color: rgb(255,255,255);
@@ -211,6 +222,15 @@
             </div>
           </div>
           </div>
+        <div class='content-block1'>
+            <div class="row">
+              <div class="col">
+                <p class="title">
+                  Generating 3D city models rapidly is crucial for many applications. To obtain large-scale geometric information timely,monocular height estimation is one of the most efficient ways. However, existing works mainly focus on training and testing models onunbiased datasets, which don’t align well with real-world applications. Therefore, we propose a new benchmark dataset to study thetransferability of height estimation models in a cross-dataset setting. To this end, we first design and construct a large-scale benchmark dataset for cross-dataset transfer learning on the height estimation task. This benchmark dataset includes a newly-proposed large-scale synthetic dataset, a newly collected real-world dataset, and four existing datasets. Based on this, two new experimental protocols: zero-shot and few-shot cross-dataset transfer are designed. For few-shot cross-dataset transfer, we enhance the window-based Transformer with the proposed scale-deformable convolution module to handle the severe scale-variation problem. To improve the generalizability of deep models in the zero-shot cross-dataset setting, a max-normalization based Transformer network is designed to decouple the relative height map from the absolute heights. Experimental results have demonstrated the effectiveness of the proposed methods in both the traditional and cross-dataset transfer settings.</p>
+              </div>
+            </div>
+
+          </div>
         <div class='content-block2'>
           <div class="row">
             <div class="col">
@@ -242,24 +262,24 @@
           </div>
         </div>
       </div>
-        <!-- Visualization Results  -->
-        <div class="content-block">
+      <!-- Visualization Results  -->
+      <div class="content-block">
 
-        <div class="row">
-          <div class="col">
-            <p class="title">
-              <h3>
-                Visualization Results</h3>
-            </p>
-          </div>
+      <div class="row">
+        <div class="col">
+          <p class="title">
+            <h3>
+              Visualization Results</h3>
+          </p>
         </div>
-        <div class="row">
-          <div class="col">
-            <img src="img/vis_results/vis.png">
-          </div>
-        </div>
-
       </div>
+      <div class="row">
+        <div class="col">
+          <img src="img/vis_results/vis.png">
+        </div>
+      </div>
+
+    </div>
 
       <!-- Citation -->
       <div class="content-block citation">
